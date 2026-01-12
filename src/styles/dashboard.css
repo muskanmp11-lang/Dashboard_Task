@@ -146,3 +146,33 @@
     border-bottom: 2px solid rgba(255,255,255,0.3);
     margin-top: 10px;
 }
+
+
+
+
+/* mobile responsive accross all devices........... */
+
+@media (max-width: 992px) {
+    .stats-container, .stats-grid {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+
+    .main-grid {
+        grid-template-columns: 1fr; 
+    }
+}
+
+@media (max-width: 600px) {
+    .stats-container, .stats-grid {
+        grid-template-columns: 1fr; 
+    }
+
+    .social-container {
+        grid-template-columns: 1fr;
+    }
+
+    .traffic-footer {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
